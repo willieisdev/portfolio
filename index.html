@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Williams Omotayo Adaji-Agbane — Computational Geospatial Researcher</title>
+<meta name="description" content="Computational geospatial researcher building applied computer vision systems across agriculture, health, and the geosciences." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="contours"></canvas>
+
+<main>
+
+  <header class="hero">
+    <p class="hero-loc">6°45′N, 8°08′E &nbsp;·&nbsp; Uyo, Nigeria</p>
+    <h1>Williams Omotayo<br>Adaji-Agbane</h1>
+    <p class="hero-role">AI Engineer/Researcher</p>
+    <p class="hero-thesis">
+      I build computer vision systems that read signals off the physical
+      world — crop leaves, skin lesions, mineral thin-sections — on a path
+      toward a professorship at the intersection of computer vision and
+      the geosciences.
+    </p>
+  </header>
+
+  <section class="block">
+    <h2>About</h2>
+    <p class="prose">
+      I'm a AI Engineer/Researcher at the TETFund Center of
+      Excellence in Computational Research Intelligence, University of
+      Uyo, where I'm also pursuing an M.Sc. in Data Science. My work sits
+      across geospatial machine learning, spatio-temporal modeling, and
+      explainable computer vision applied to geoscience problems. I hold
+      a B.Sc. in Geology (2023), and I'm building toward a research
+      career that treats the Earth as something a model can be taught to see clearly.
+    </p>
+  </section>
+
+  <section class="block">
+    <h2>Deployed solutions</h2>
+    <div class="projects">
+
+      <article class="project-card status-live">
+        <div class="project-head">
+          <span class="status-dot"></span>
+          <span class="status-label">Live</span>
+        </div>
+        <h3>TomatoNet</h3>
+        <p>
+          Three-task CNN classifier for tomato crops: fruit maturity
+          detection, fruit quality grading, and leaf disease
+          classification across ten disease classes. Each task runs its
+          own dedicated model.
+        </p>
+        <a class="project-link" href="https://tomato-cv.streamlit.app/" target="_blank" rel="noopener">
+          tomato-cv.streamlit.app
+        </a>
+      </article>
+
+      <article class="project-card status-building">
+        <div class="project-head">
+          <span class="status-dot"></span>
+          <span class="status-label">Building</span>
+        </div>
+        <h3>PASSION</h3>
+        <p>
+          ResNet-50 skin-disease diagnosis model trained on the PASSION
+          MICCAI 2024 dataset (4,901 images, 4 disease classes), reaching
+          80.6% test accuracy with a two-stage fine-tuning approach.
+        </p>
+        <span class="project-link disabled">Deploying soon</span>
+      </article>
+
+      <article class="project-card status-building">
+        <div class="project-head">
+          <span class="status-dot"></span>
+          <span class="status-label">Building</span>
+        </div>
+        <h3>LITHOS</h3>
+        <p>
+          Explainability analysis applied to the LITHOS petrographic
+          benchmark — surfacing which visual features drive automated
+          rock and mineral classification from thin-section imagery.
+        </p>
+        <span class="project-link disabled">Deploying soon</span>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Publications</h2>
+    <ol class="pubs">
+      <li>
+        Uchua, K., Essien, J., Oloyede, A., Oluwafemi, F., <strong>Adaji-Agbane, W.</strong>,
+        Ekeson, U., Olatunbosun, D., Nsofor, C., Bauka, N., &amp; Ogunrombi, T. (2025).
+        Space based multicriteria analytics with hybrid weighting for flood risk
+        management. <em>Discover Analytics</em>, 3, 13.
+        <a href="https://doi.org/10.1007/s44257-025-00043-4" target="_blank" rel="noopener">doi.org/10.1007/s44257-025-00043-4</a>
+      </li>
+      <li>
+        Ezugwu, J.E., Asuquo, P., Stephen, B.U., Ozuomba, S., <strong>Adaji-Agbane, W.</strong>,
+        Oloyede, A., Nnah, O., &amp; Ikpe, J. (2026). Spatio-Temporal Modelling of
+        Temperature Data using Machine Learning. <em>E3S Web of Conferences</em>, 735, 02006.
+        <a href="https://doi.org/10.1051/e3sconf/202673502006" target="_blank" rel="noopener">doi.org/10.1051/e3sconf/202673502006</a>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li><a href="mailto:williamsadaji2017@gmail.com">williamsadaji2017@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/williams-adaji-agbane-8b31b83b5" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/willieisdev" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://medium.com/@williams_dev" target="_blank" rel="noopener">Medium</a></li>
+    </ul>
+  </section>
+
+  <footer class="log">
+    <p id="visitor-log">Reading the field log…</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
