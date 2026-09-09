@@ -18,26 +18,32 @@
 
   <header class="hero">
     <p class="hero-loc">6°45′N, 8°08′E &nbsp;·&nbsp; Uyo, Nigeria</p>
-    <h1>Williams Omotayo<br>Adaji-Agbane</h1>
-    <p class="hero-role">AI Engineer/Researcher</p>
+    <h1>
+      <img src="assets/headshot.png" alt="Portrait of Williams Omotayo Adaji-Agbane" class="name-portrait">
+      <span>Williams Omotayo<br>Adaji-Agbane</span>
+    </h1>
+    <p class="hero-role">Computational Geospatial Researcher</p>
     <p class="hero-thesis">
-      I build computer vision systems that read signals off the physical
-      world — crop leaves, skin lesions, mineral thin-sections — on a path
-      toward a professorship at the intersection of computer vision and
-      the geosciences.
     </p>
   </header>
 
   <section class="block">
     <h2>About</h2>
     <p class="prose">
-      I'm a AI Engineer/Researcher at the TETFund Center of
+      I'm a computational geospatial researcher at the TETFund Center of
       Excellence in Computational Research Intelligence, University of
-      Uyo, where I'm also pursuing an M.Sc. in Data Science. My work sits
-      across geospatial machine learning, spatio-temporal modeling, and
-      explainable computer vision applied to geoscience problems. I hold
-      a B.Sc. in Geology (2023), and I'm building toward a research
-      career that treats the Earth as something a model can be taught to see clearly.
+      Uyo, where I'm also pursuing an M.Sc. in Data Science. I hold a
+      B.Sc. in Geology (2023), and that background is where my computer
+      vision work starts: geospatial machine learning, spatio-temporal
+      modeling, and explainability applied to geoscience problems.
+    </p>
+    <p class="prose">
+      The same toolkit travels well. Whether the input is a satellite
+      pass, a tomato leaf, a skin lesion, or a mineral thin-section, the
+      underlying problem is the same — teaching a model to read a weak
+      or noisy visual signal reliably. That's the thread across the
+      projects below, and the direction I'm building toward: a research
+      career at the intersection of computer vision and the geosciences.
     </p>
   </section>
 
@@ -81,11 +87,29 @@
           <span class="status-dot"></span>
           <span class="status-label">Building</span>
         </div>
-        <h3>LITHOS</h3>
+        <h3>Mineral XAI</h3>
         <p>
-          Explainability analysis applied to the LITHOS petrographic
-          benchmark — surfacing which visual features drive automated
-          rock and mineral classification from thin-section imagery.
+          Explainable mineral classification from petrographic thin-sections
+          across five classes (biotite, hornblende, plagioclase, K-feldspar,
+          quartz), with a ResNet-50 model reaching 98.74% accuracy and
+          Grad-CAM++/LIME explainability to surface which visual features
+          drive each prediction.
+        </p>
+        <span class="project-link disabled">Deploying soon</span>
+      </article>
+
+      <article class="project-card status-building">
+        <div class="project-head">
+          <span class="status-dot"></span>
+          <span class="status-label">Building</span>
+        </div>
+        <h3>Oil Spill Detection</h3>
+        <p>
+          Semantic segmentation of marine oil spills and debris from
+          Sentinel-2 satellite imagery on the MADOS dataset,
+          benchmarking SegFormer-B2 and Mask2Former against the MariNeXt
+          baseline. SegFormer-B2 reaches 0.7356 test mIoU on MADOS,
+          roughly 9 points above baseline.
         </p>
         <span class="project-link disabled">Deploying soon</span>
       </article>
