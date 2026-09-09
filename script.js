@@ -68,7 +68,7 @@
     .then((res) => res.json())
     .then((data) => {
       const n = data.value;
-      el.textContent = `Visitor No. ${String(n).padStart(6, '0')} — welcome to the field log.`;
+      el.textContent = `Visitor No. ${String(n).padStart(6, '0')}. Welcome to the field log.`;
     })
     .catch(() => {
       el.textContent = 'Welcome to the field log.';
