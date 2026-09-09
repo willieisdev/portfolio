@@ -56,21 +56,3 @@
 
   draw();
 })();
-
-// ── Visitor field log ────────────────────────────────────────────────
-// Uses a public, no-signup counting API (CountAPI-compatible). The key
-// is unique to this site to avoid colliding with anyone else's counter.
-(function () {
-  const el = document.getElementById('visitor-log');
-  if (!el) return;
-
-  fetch('https://countapi.mileshilliard.com/api/v1/hit/williams-adaji-agbane-portfolio')
-    .then((res) => res.json())
-    .then((data) => {
-      const n = data.value;
-      el.textContent = `Visitor No. ${String(n).padStart(6, '0')}. Welcome to the field log.`;
-    })
-    .catch(() => {
-      el.textContent = 'Welcome to the field log.';
-    });
-})();
