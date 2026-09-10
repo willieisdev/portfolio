@@ -56,3 +56,32 @@
 
   draw();
 })();
+
+// ── Visitor field log ────────────────────────────────────────────────
+// Abacus explicitly supports CORS for cross-origin fetch, unlike the
+// two services tried before this. Namespaced to this domain to avoid
+// key collisions with anyone else using the same public API.
+(function () {
+  const el = document.getElementById('visitor-log');
+  if (!el) return;
+
+  function ordinal(n) {
+    const rem100 = n % 100;
+    if (rem100 >= 11 && rem100 <= 13) return n + 'th';
+    switch (n % 10) {
+      case 1: return n + 'st';
+      case 2: return n + 'nd';
+      case 3: return n + 'rd';
+      default: return n + 'th';
+    }
+  }
+
+  fetch('https://abacus.jasoncameron.dev/hit/willieisdev.github.io/portfolio')
+    .then((res) => res.json())
+    .then((data) => {
+      el.textContent = `Hello, welcome! You are the ${ordinal(data.value)} person to visit my portfolio.`;
+    })
+    .catch(() => {
+      el.textContent = 'Hello, welcome to my portfolio.';
+    });
+})();

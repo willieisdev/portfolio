@@ -232,15 +232,6 @@ h1 {
   margin: 0;
 }
 
-#visitor-badge {
-  display: block;
-  height: 20px;
-}
-
-#visitor-fallback {
-  display: none;
-}
-
 @media (max-width: 480px) {
   main { padding: 64px 20px 48px; }
   .block { margin-top: 56px; padding-top: 32px; }
